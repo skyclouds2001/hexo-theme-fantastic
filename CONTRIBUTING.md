@@ -25,7 +25,7 @@ The supported scopes are:
 - **i18n** for adding or updating translations
 - **test** for testing or linting-related commits
 - **build** for build scripts, CI, other development or deployment related commits
-- use __\*__ or leave empty to refer to commits that do not have a clear scope
+- use **\*** or leave empty to refer to commits that do not have a clear scope
 
 ## Submit changes
 
