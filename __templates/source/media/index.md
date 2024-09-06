@@ -1,5 +1,5 @@
 ---
-title: 
+title:
 date: 2019-07-30 09:33:48
 thumbnail: https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/20201030170254.png
 ---
@@ -20,13 +20,12 @@ thumbnail: https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/202010301702
     </div>
 </div>
 
-<link rel="stylesheet" href="/css/meplayer.min.css"/>
-<script type="text/javascript" defer src="/js/meplayer.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/meplayer@0/dist/meplayer.min.css"/>
+<script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/meplayer@0/dist/meplayer.min.js"></script>
 <script type="text/javascript" defer src="/js/music.js"></script>
 
 <br/>
 <p style = "text-align:center"><span style="font-size:13px;">音乐播放器由<a href="https://github.com/newraina/mePlayer" target="_blank" rel="noopener">mePlayer</a>提供，布局参照<a href="https://dp2px.com/music/" target="_blank" rel="noopener">网友博客</a>所作，感谢作者的辛勤付出。更多音乐分享请查看<a href="https://removeif.github.io/music/">歌单</a>。</span></p>
-<link rel="stylesheet" href="/css/DPlayer.min.css"/>
 <br/>
 <br/>
 <div class="video-player">
@@ -39,4 +38,4 @@ thumbnail: https://cdn.jsdelivr.net/gh/removeif/blog_image/img/2020/202010301702
     <br/>
     <div id="dplayer"><br/></div>
 </div>
-<script src="/js/DPlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dplayer@1/dist/DPlayer.min.js"></script>

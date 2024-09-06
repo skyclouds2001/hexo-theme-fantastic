@@ -1,4 +1,3 @@
-const crypto = require('crypto');
 const {Component, Fragment} = require('inferno');
 const {cacheComponent} = require('hexo-component-inferno/lib/util/cache');
 
@@ -31,7 +30,7 @@ class Gitalk extends Component {
                 Please set it in <code>_config.yml</code>.
             </div>;
         }
-        const js = ` $.getScript('${jsUrl}', function () { 
+        const js = ` $.getScript('${jsUrl}', function () {
             var gitalk = new Gitalk({
             language:'${language}',
             id: '${id}',
@@ -60,7 +59,7 @@ class Gitalk extends Component {
 
 module.exports = Gitalk.Cacheable = cacheComponent(Gitalk, 'comment.gitalk', props => {
     const {helper, comment} = props;
-    const {my_cdn, url_for, __, _get_md5, _get_path_end_str} = helper;
+    const {__, _get_md5, _get_path_end_str} = helper;
 
     // FIXME: config name change
     const id = _get_md5(_get_path_end_str(props.page.path, props.page.uniqueId, props.page.title));
@@ -82,8 +81,8 @@ module.exports = Gitalk.Cacheable = cacheComponent(Gitalk, 'comment.gitalk', pro
         proxy: comment.proxy,
         flipMoveOptions: comment.flip_move_options,
         enableHotKey: comment.enable_hotkey,
-        cssUrl: helper.cdn('gitalk', '1.6.0', 'dist/gitalk.css'),
-        jsUrl: my_cdn(url_for('/js/gitalk.min.js')),
+        cssUrl: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css',
+        jsUrl: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js',
         isLocked: !canComments,
     };
 });

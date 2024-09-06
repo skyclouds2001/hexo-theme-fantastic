@@ -62,12 +62,11 @@ module.exports = class extends Component {
                 </div>;
         }
 
-        const echartJsUrl = my_cdn(url_for("/js/echarts.min.js"));
         const js = `function loadEchart(){
             if($("#post-calendar").length <= 0){
                 return;
             }
-            $.getScript('${echartJsUrl}', function () { 
+            $.getScript('https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js', function () {
             let myChart = echarts.init(document.getElementById('post-calendar'));
             let option = {
             title: {
@@ -156,7 +155,7 @@ module.exports = class extends Component {
                     <div style="post-calendar-pre">
                         <div id="post-calendar"></div>
                     </div>
-                    <script type="text/javascript" src={my_cdn(url_for("/js/echarts.min.js"))}></script>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
                     <script type="text/javascript" dangerouslySetInnerHTML={{__html: js}}></script>
                     {articleList}
                 </div>

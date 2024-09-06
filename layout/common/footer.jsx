@@ -87,8 +87,8 @@ class Footer extends Component {
                         </div> : null}
                         {side_music_netease_id ?
                             <div class="sideMusic">
-                                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" />
-                                <script src={my_cdn(url_for('/js/APlayer.min.js'))}></script>
+                                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" />
+                                <script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script>
                                 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
                                 <meting-js style="width: auto;height: 2000px;"
                                     server="netease"

@@ -3,8 +3,8 @@ title: 音乐歌单收藏
 date: 2019-07-30 10:43:45
 ---
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 <meting-js style="width: auto;height: 2000px;"
